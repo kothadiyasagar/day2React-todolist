@@ -1,6 +1,7 @@
 import { useState } from "react";
 import{nanoid} from 'nanoid'
 import Todoitem from "./todoitem"
+import './todo.css'
 const TodoList =()=>{
    const[task,setTask]=useState("")
    const[todo,setTodo]=useState([])
@@ -18,8 +19,8 @@ const TodoList =()=>{
 
     return (
         <>
-        <input type={"text"} value={task} placeholder="enter" onChange={handal}></input>
-        <button onClick={handclick}>+</button>
+        <input className="b" type={"text"} value={task} placeholder="Write something" onChange={handal}></input>
+        <button className="c" onClick={handclick}>+</button>
         {todo.map(item=>{
             return <Todoitem key={item.id} data={item}/>
         })}
