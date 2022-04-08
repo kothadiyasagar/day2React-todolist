@@ -1,0 +1,16 @@
+.a {
+  background-color: whitesmoke;  
+   justify-content: left;
+   text-align: left; 
+   /* text-align: center; */
+  width: 30%;
+  line-height:100px;
+  margin: auto;
+  padding: 5x;
+  border-radius: 25px;
+}
+ div> h1{
+    margin-left: 50px;
+    
+
+}
